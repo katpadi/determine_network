@@ -19,8 +19,8 @@ function determine_network($mobileNumber)
         return "SMART";
     elseif ( preg_match($globe_expression, $mobileNumber) )
         return "GLOBE";
-    else
-        return null;
+
+    return null;
 }
 ?>
 
